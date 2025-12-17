@@ -4,6 +4,7 @@
 [![dependency status](https://deps.rs/repo/github/uutils/sed/status.svg)](https://deps.rs/repo/github/uutils/sed)
 
 [![CodeCov](https://codecov.io/gh/uutils/sed/branch/master/graph/badge.svg)](https://codecov.io/gh/uutils/sed)
+[![CodSpeed Badge](https://img.shields.io/endpoint?url=https://codspeed.io/badge.json)](https://codspeed.io/AvalancheHQ/uutils-sed)
 
 # sed
 

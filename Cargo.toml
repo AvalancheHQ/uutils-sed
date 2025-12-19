@@ -75,6 +75,7 @@ uucore = { workspace = true }
 
 [dev-dependencies]
 chrono = { workspace = true }
+criterion = { package = "codspeed-criterion-compat", version = "4.1" }
 libc = { workspace = true }
 pretty_assertions = "1"
 rand = { workspace = true }
@@ -103,6 +104,10 @@ path = "src/bin/sed.rs"
 name = "uudoc"
 path = "src/bin/uudoc.rs"
 required-features = ["uudoc"]
+
+[[bench]]
+name = "sed_benchmark"
+harness = false
 
 # The default release profile. It contains all optimizations, without
 # sacrificing debug info. With this profile (like in the standard

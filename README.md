@@ -4,6 +4,7 @@
 [![dependency status](https://deps.rs/repo/github/uutils/sed/status.svg)](https://deps.rs/repo/github/uutils/sed)
 
 [![CodeCov](https://codecov.io/gh/uutils/sed/branch/master/graph/badge.svg)](https://codecov.io/gh/uutils/sed)
+[![CodSpeed](https://img.shields.io/endpoint?url=https://codspeed.io/badge.json)](https://codspeed.io/AvalancheHQ/uutils-sed)
 
 # sed
 
@@ -47,13 +48,13 @@ The binary is named `sed` in `target/release/sed`.
 * Spaces can precede a regular expression modifier.
 * `I` can be used in as a synonym for the `i` (case insensitive) substitution
   flag.
-* In addition to `\n`, other escape sequences (octal, hex, C) are supported
+* In addition to `\\n`, other escape sequences (octal, hex, C) are supported
   in the strings of the `y` command.
   Under POSIX these yield undefined behavior.
 * The `a`, `c`, and `i` commands do not require an initial backslash,
   allow text to appear on the same line, and support escape sequences
   in the specified text.
-* The substitution command replacement group `\0` is a synonym for &.
+* The substitution command replacement group `\\0` is a synonym for &.
 * A `Q` command (optionally followed by an exit code) quits immediately.
 * The `q` command can be optionally followed by an exit code.
 * The `l` command can be optionally followed by the output width.
@@ -65,8 +66,8 @@ The binary is named `sed` in `target/release/sed`.
 
 ### New extensions
 * Unicode characters can be specified in regular expression pattern, replacement
-  and transliteration sequences using `\uXXXX` or `\UXXXXXXXX` sequences.
-* The `l` command lists Unicode characters using the `\uXXXX` and `\UXXXXXXXX`
+  and transliteration sequences using `\\uXXXX` or `\\UXXXXXXXX` sequences.
+* The `l` command lists Unicode characters using the `\\uXXXX` and `\\UXXXXXXXX`
   sequences.
 
 ### Incompatibilities
